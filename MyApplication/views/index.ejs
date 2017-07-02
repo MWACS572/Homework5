@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Info</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>User Info</h1>
+    
+    
+    
+    <table border="1">
+      <tr>
+        <th>ID</th><th>Name</th><th>Username</th><th>Email</th><th>Address</th><th>Phone</th><th>Website</th><th>Company</th>
+      </tr>
+      
+        <%for(let i in title){ %>
+        <tr>
+          <td><%=title[i].id%></td><td><%=title[i].name%></td><td><%=title[i].username%></td><td><%=title[i].email%></td><td><%=title[i].address%></td><td><%=title[i].phone%></td><td><%=title[i].website%></td><td><%=title[i].company%></td>
+          </tr> 
+        <%}%>
+      
+   
+    </table>
+  </body>
+</html>
